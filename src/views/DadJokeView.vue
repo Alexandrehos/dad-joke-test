@@ -3,7 +3,7 @@
     <h2 class="title">🤣 Get a Dad Joke 🤣</h2>
     <div class="input-container">
       <input v-model="topic" placeholder="Enter a topic" class="input" />
-      <button @click="getDadJoke" class="button" :disabled="isLoading">
+      <button @click="getDadJoke" class="button" disabled>
         <span v-if="isLoading">Loading...</span>
         <span v-else>Get Joke</span>
       </button>
@@ -93,7 +93,7 @@ export default {
 .button {
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: #ff6f61;
+  background-color: #919191;
   color: #fff;
   border: none;
   cursor: pointer;
